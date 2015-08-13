@@ -1,4 +1,7 @@
 {
-	"name" : "AppleStore-project",
-	"version": "0.1.1"
+  "name": "AppleStore-project",
+  "version": "0.1.1",
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
 }

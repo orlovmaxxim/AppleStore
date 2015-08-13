@@ -1,0 +1,17 @@
+$fontStack: "elektra_light_proregular", Arial ,sans-serif;
+
+$mainFontColor: #5c7b98;
+$mainColorBlue: #00b9fe;
+
+
+$containerWidth: 1000px;
+$containerMargin: 0px auto;
+
+body {
+  font: 100% $fontStack;
+  color: $mainFontColor;
+}
+
+h1 {
+	color: $mainColorBlue;
+}
