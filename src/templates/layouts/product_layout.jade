@@ -9,141 +9,68 @@ html(lang="ru-RU")
 		link(rel="stylesheet", type="text/css", href="fonts/stylesheet.css")
 		link(rel="stylesheet", type="text/css", href="css/product_style.css")
 		link(rel="stylesheet", type="text/css", href="bower/normalize.css/normalize.css")
+		script(src="bower/modernizr/modernizr.js")
 		block title
 			title product-Apple-store
 	body.product-page
 		.wrapper
-			header.header
-				.header__top
+			.maincontent
+				include ../common/header.jade
+				include ../common/navigator.jade
+				block item
 					.container
-						ul.soc.header__soc
-							li.soc__item
-								a.soc__link(href="#") Vk
-							li.soc__item
-								a.soc__link(href="#") Facebook
-							li.soc__item
-								a.soc__link(href="#") Twitter
-						.header__address г.Москва, ул. Новая 246, офис 214
-						.header__phone +7(921) 322 12 32
-				.header__bottom
-					.container
-						.logo.header__logo
-							a.logo__item
-								img(alt="logotype", src="img/logo-header")
-						form.search-form.header__search-form
-							input.search-form__input(placeholder="iMac 27 дюймов")
-							input.search-form__button(type="submit", value="Поиск")
-						ul.menu.header__menu
-							li.menu__item
-								a.menu__link(href="#") Карта проезда
-							li.menu__item
-								a.menu__link(href="#") История заказов
-						.header__cart
-							a.header__cart__link(href="#") Корзина (3)
-			nav.navigator
-				.container
-					ul.navigator__list
-						li.navigator__item
-							a.navigator__link(href="#") Мобильные телефоны
-						li.navigator__item
-							a.navigator__link_light(href="#") Планшеты
-						li.navigator__item
-							a.navigator__link(href="#") Mp3 плееры
-						li.navigator__item
-							a.navigator__link(href="#") Персональные компьбтеры
-						li.navigator__item
-							a.navigator__link(href="#") Ноутбуки
-						li.navigator__item
-							a.navigator__link(href="#") Apple TV
-						li.navigator__item
-							a.navigator__link(href="#") Аксессуары
-			.container
-				nav.paginator
-					ul.paginator__list
-						li.paginator__item
-							a.paginator__link(href="#") Главная
-						li.paginator__item
-							a.paginator__link(href="#") Каталог
-						li.paginator__item
-							a.paginator__link_light(href="#") iPad Air Wi-Fi + Cellural 128GB - Silver
-				.slider
-				.tech-characters
-					h1.tech-characters__title iPad Air Wi-Fi + Cellural 128GB - Silver
-					.tech-characters__desc
-						table
-							tbody
-								tr
-									td Артикул
-									td 42787825
-								tr
-									td Опция
-									td включена
-								tr
-									td Цвет
-									td Серебристый
-								tr
-									td Размер
-									td 1280*1245*90
-								tr
-									td Вес
-									td 200 кг
-								tr
-									td Артикул
-									td 42787825
-								tr
-									td Опция
-									td включена
-								tr
-									td Цвет
-									td Серебристый
-								tr
-									td Размер
-									td 1280*1245*90
-								tr
-									td Вес
-									td 200 кг
-				.about-store
-					h2.about-store__title Пара слов о магазине
-					.about-store__desc
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
-			footer.footer
-				.container
-					.logo.footer__logo
-						a.logo__item
-							img(alt="logotype", src="img/logo-header")
-					.site-map.footer__site-map
-						ul.site-map__list
-							li.site-map__item
-								h3.site-map__title О магазине
-								a.site-map__link О нас
-								a.site-map__link Наши цены
-								a.site-map__link Наши скидки
-								a.site-map__link Акции
-							li.site-map__item
-								h3.site-map__title Каталог
-								a.site-map__link Смартфоны
-								a.site-map__link Планшеты
-								a.site-map__link Компьютеры
-								a.site-map__link Аксессуары
-							li.site-map__item
-								h3.site-map__title Контакты
-								a.site-map__link Телефоны
-								a.site-map__link Адреса
-								a.site-map__link Карта проезда
-								a.site-map__link Обратная связь
-					.socials.footer__socials
-						.mobile-store
-							.mobile-store__app-store
-							.mobile-store__google-play
-						ul.footer-soc
-							li.footer-soc__item
-								a.footer-soc__link(href="#") Vk
-							li.footer-soc__item
-								a.footer-soc__link(href="#") Facebook
-							li.footer-soc__item
-								a.footer-soc__link(href="#") Twitter
+						nav.paginator
+							ul.paginator__list
+								li.paginator__item
+									a.paginator__link(href="#") Главная
+								li.paginator__item
+									a.paginator__link(href="#") Каталог
+								li.paginator__item
+									a.paginator__link.paginator__link_light(href="#") iPad Air Wi-Fi + Cellural 128GB - Silver
+						.slider
+						.tech-characters
+							h1.tech-characters__title iPad Air Wi-Fi + Cellural 128GB - Silver
+							.tech-characters__desc
+								table
+									tbody
+										tr
+											td Артикул
+											td 42787825
+										tr
+											td Опция
+											td включена
+										tr
+											td Цвет
+											td Серебристый
+										tr
+											td Размер
+											td 1280*1245*90
+										tr
+											td Вес
+											td 200 кг
+										tr
+											td Артикул
+											td 42787825
+										tr
+											td Опция
+											td включена
+										tr
+											td Цвет
+											td Серебристый
+										tr
+											td Размер
+											td 1280*1245*90
+										tr
+											td Вес
+											td 200 кг
+						.about-store
+							h2.about-store__title Пара слов о магазине
+							.about-store__desc
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
+				
+				include ../common/footer.jade
 
 
 					
