@@ -1,17 +1,103 @@
-$fontStack: "elektra_light_proregular", Arial ,sans-serif;
+@import "compass";
+/* <==========normalize==========> */
+@import "_misc/_normalize";
+/* <==========mixins==========> */
+@import "_misc/_mixins";
+/* <==========adjustment==========> */
+@import "_misc/_adjustment";
 
-$mainFontColor: #5c7b98;
-$mainColorBlue: #00b9fe;
+/* <==========sections==========> */
 
-
-$containerWidth: 1000px;
-$containerMargin: 0px auto;
-
-body {
-  font: 1em $fontStack;
-  color: $mainFontColor;
+//HEADER-TOP
+.header__top {
+	@include clearfix;
+	padding-top: 10px;
+	background: #43616d;
 }
 
-h1 {
+.soc {
+	float: left;
+}
+
+.soc__item {
+	@include inlineblock;
+	margin-right: 8px;
+}
+
+.soc__link {
+	display: block;
+	text-decoration: none;
+	font-size: 0px;
+}
+
+$icons: sprite-map('../img/*.png');
+
+$items: vk, fb, tw;
+
+@each $item in $items {
+	.soc__link_#{$item} {
+		background: sprite($icons, $item);
+		/* background-image: url('../img/#{$item}.png'); */
+		background-repeat: no-repeat;
+		width: sprite-width($icons, $item);
+		height: sprite-height($icons, $item);
+	}
+}
+
+.header__address {
+	position: relative;
+	float: left;
+	margin-left: 315px;
+	font-size: 13px;
+	line-height: 20px;
+	color: #fff;
+}
+
+$geoloc: geoloc-i;
+.header__address:before {
+	content: " ";
+	position: absolute;
+	left: -28px;
+	background: sprite($icons, $geoloc);
+	background-repeat: no-repeat;
+	width: sprite-width($icons, $geoloc);
+	height: sprite-height($icons, $geoloc);
+}
+
+.header__phone {
+	float: right;
+	font-size: 25px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.header__phone sup {
+	font-size: 16px;
 	color: $mainColorBlue;
 }
+
+//HEADER-BOTTOM
+
+.header__bottom {
+	@include clearfix;
+	background: #dfe9f2;
+}
+
+.header__logo,
+.header__search-form,
+.header__menu {
+	float: left;
+	margin-right: 25px;
+}
+
+.header__search-form {
+	margin-left: 35px;
+}
+
+.header__cart {
+	float: right;
+}
+
+
+
+

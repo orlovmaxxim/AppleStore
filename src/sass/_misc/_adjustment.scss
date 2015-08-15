@@ -1,0 +1,75 @@
+/* --------- adjustment --------- */
+
+$containerWidth: 1000px;
+$containerMargin: 0px auto;
+$fontStack: "elektra_light_proregular", Arial ,sans-serif;
+$footerHeight: 230px;
+
+$mainFontColor: #5c7b98;
+$mainColorBlue: #00b9fe;
+
+html {
+	width:100%;
+	height:100%;
+	font-size: 100.01%;
+}
+
+body {
+    font: 14px/1.41 $fontStack;
+    -webkit-font-smoothing: antialiased;
+	width:100%;
+	height:100%;
+    color: $mainFontColor;
+}
+
+h1 {
+    color: $mainColorBlue;
+}
+
+.container {
+    position: relative;
+    width: $containerWidth;
+    margin: $containerMargin;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    overflow: hidden;
+    min-width: $containerWidth + 20;
+
+    &:after {
+	    display: block;
+        position: relative;
+        height: $footerHeight;
+    }
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+	list-style: none outside none;
+
+	li {
+        padding: 0;
+        left: 0;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+	position: relative; 
+	margin-top: -$footerHeight;
+	height: $footerHeight;
+}
