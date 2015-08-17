@@ -652,6 +652,7 @@ footer {
 }
 
 .header__bottom {
+  padding-top: 35px;
   background: #dfe9f2;
 }
 .header__bottom:before, .header__bottom:after {
@@ -669,10 +670,119 @@ footer {
   margin-right: 25px;
 }
 
+.header__logo {
+  position: relative;
+  bottom: 10px;
+}
+
 .header__search-form {
   margin-left: 35px;
 }
 
+.search-form__input {
+  width: 245px;
+  padding: 6px 0;
+  padding-left: 10px;
+  border: 1px solid #dce6f0;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #fff;
+  color: #dce6f0;
+  outline: medium none;
+}
+
+.search-form__button {
+  position: relative;
+  top: -1px;
+  height: 32px;
+  padding: 0 16px;
+  border: medium none;
+  outline: 0px none;
+  font-family: "elektra_light_probold", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: #00b9fe;
+  color: #fff;
+}
+
+.menu__item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 20px;
+}
+.menu__item:first-child {
+  margin-right: 20px;
+}
+
+.menu__link {
+  color: #00b9fe;
+}
+
 .header__cart {
   float: right;
+}
+
+.cart__link {
+  position: relative;
+  display: block;
+  bottom: 7px;
+  padding: 10px 20px;
+  padding-left: 45px;
+  border: 1px solid #dce6f0;
+  font-size: 13px;
+  line-height: 20px;
+  background: #fff;
+  color: #5c7b98;
+}
+
+.cart__link:before {
+  content: " ";
+  position: absolute;
+  left: 8px;
+  background: url('/../img/../img-s05debeba15.png') 0 0;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 17px;
+}
+
+.navigator {
+  border-bottom: 1px solid #e3e3e3;
+  background: #f7f7f7;
+}
+
+.navigator__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navigator__link {
+  position: relative;
+  display: block;
+  padding: 10px 10px 10px 25px;
+  text-decoration: none;
+  color: #5c7b98;
+}
+.navigator__link:hover {
+  background: #dce6f0;
+}
+.navigator__link:hover:after {
+  background: #dce6f0;
+  border-left-color: #dce6f0;
+  border-bottom-color: #dce6f0;
+}
+.navigator__link:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d8e0ea;
+  border-left-color: #f7f7f7;
+  border-bottom-color: #f7f7f7;
+  border-bottom-left-radius: 50px;
+  z-index: 1;
+  background: #f7f7f7;
+  transform: rotate(45deg);
 }
