@@ -18,58 +18,70 @@ html(lang="ru-RU")
 				include ../common/navigator.jade
 				block item
 					.container
-						nav.paginator
-							ul.paginator__list
-								li.paginator__item
-									a.paginator__link(href="#") Главная
-								li.paginator__item
-									a.paginator__link(href="#") Каталог
-								li.paginator__item
-									a.paginator__link.paginator__link_light(href="#") iPad Air Wi-Fi + Cellural 128GB - Silver
-						.slider
-						.tech-characters
-							h1.tech-characters__title iPad Air Wi-Fi + Cellural 128GB - Silver
-							.tech-characters__desc
-								table
+						nav.breadcrumbs
+							ul.breadcrumbs__list
+								li.breadcrumbs__item
+									a.breadcrumbs__link(href="#") Главная
+								li.breadcrumbs__item
+									a.breadcrumbs__link(href="#") Каталог
+								li.breadcrumbs__item
+									a.breadcrumbs__link.breadcrumbs__link_light(href="#") iPad Air Wi-Fi + Cellural 128GB - Silver
+						.product
+							.slider
+								.slider__list-wrap
+									ul.slider__list
+										li.slider__item
+											img.slider__img(src="../img/ipad-bigpic-slider.jpg")
+										li.slider__item
+											img.slider__img(src="../img/ipad-bigpic-slider.jpg")
+										li.slider__item
+											img.slider__img(src="../img/ipad-bigpic-slider.jpg")
+										li.slider__item
+											img.slider__img(src="../img/ipad-bigpic-slider.jpg")
+								.slider__buttons
+									a.slider__btn.slider__btn_next(href="#") Next
+									a.slider__btn.slider__btn_prev(href="#") Prev
+							.tech-characters
+								h1.tech-characters__title iPad Air Wi-Fi + Cellural 128GB - Silver
+								table.tech-characters__desc
 									tbody
-										tr
-											td Артикул
-											td 42787825
-										tr
-											td Опция
-											td включена
-										tr
-											td Цвет
-											td Серебристый
-										tr
-											td Размер
-											td 1280*1245*90
-										tr
-											td Вес
-											td 200 кг
-										tr
-											td Артикул
-											td 42787825
-										tr
-											td Опция
-											td включена
-										tr
-											td Цвет
-											td Серебристый
-										tr
-											td Размер
-											td 1280*1245*90
-										tr
-											td Вес
-											td 200 кг
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Артикул
+											td.tech-characters__desc_td 42787825
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Опция
+											td.tech-characters__desc_td включена
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Цвет
+											td.tech-characters__desc_td Серебристый
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Размер
+											td.tech-characters__desc_td 1280*1245*90
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Вес
+											td.tech-characters__desc_td 200 кг
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Артикул
+											td.tech-characters__desc_td 42787825
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Опция
+											td.tech-characters__desc_td включена
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Цвет
+											td.tech-characters__desc_td Серебристый
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Размер
+											td.tech-characters__desc_td 1280*1245*90
+										tr.tech-characters__desc_tr
+											td.tech-characters__desc_td Вес
+											td.tech-characters__desc_td 200 кг
 						.about-store
 							h2.about-store__title Пара слов о магазине
 							.about-store__desc
 								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
 								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
 								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi, laudantium consequuntur nobis eius saepe quae, similique quod id minima totam deserunt nam dolorum itaque. Doloribus, sint nobis iusto error? Optio, non, sequi quis praesentium necessitatibus molestias. Soluta ipsam quos, sequi iure. Harum accusantium nostrum magnam culpa maiores optio cumque odit perferendis, cupiditate nam doloribus amet, commodi deleniti. Omnis, tenetur!
-				
-				include ../common/footer.jade
+		include ../common/footer.jade
 
 
 					

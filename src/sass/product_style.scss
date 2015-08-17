@@ -174,19 +174,15 @@ $cart: cart-i;
 	background: #f7f7f7;
 }
 
-.navigator__list {
-		// overflow: hidden; нужно ли?
-}
-
 .navigator__item {
 	@include inlineblock;
-
 }
 
 .navigator__link {
 	position: relative;
 	display: block;
 	padding: 10px 10px 10px 25px;
+	font-size: 15px;
 	text-decoration: none;
 	color: $mainFontColor;
 	&:hover {
@@ -214,7 +210,139 @@ $cart: cart-i;
   }
 }
 
+// BREADCRUMBS
 
+.breadcrumbs__item {
+	@include inlineblock;
+}
+
+.breadcrumbs__link {
+	position: relative;
+	padding: 10px;
+	font-size: 13px;
+	line-height: 20px;
+	color: $mainColorBlue;
+	&:after {
+		content: "";
+
+  	position: absolute;
+  	top: 15px;
+  	right: -3px;
+  	width: 5px;
+  	height: 4px;
+  	border: 1px solid $mainFontColor;
+  	border-left-color: #fff;
+    border-bottom-color: #fff;
+  	transform: rotate(45deg);
+	}
+}
+
+// PRODUCT
+
+.product {
+	@include clearfix;
+}
+
+// SLIDER
+
+.slider {
+	position: relative;
+	float: left;
+}
+
+.slider__list-wrap {
+	width: 278px;
+	height: 224px;
+	overflow: hidden;
+}
+
+.slider__list {
+	@include clearfix;
+	position: relative;
+	left: 0;
+	width: 2000px;
+}
+
+.slider__item {
+	float: left;
+}
+
+.slider__buttons {
+	position: relative;
+}
+
+.slider__btn_next {
+	position: absolute;
+	right: -100px;
+}
+
+.slider__btn_prev {
+	position: absolute;
+	left: -100px;
+}
+
+// TECH CHARACTERS
+
+.tech-characters {
+	float: right;
+}
+
+.tech-characters__title {
+	font-size: 25px;
+	line-height: 20px;
+}
+
+.tech-characters__desc {
+	width: 100%;
+	font-size: 14px;
+}
+
+.tech-characters__desc_tr:nth-child(2n) {
+	background: #eef2f4;
+}
+
+// ABOUT STORE
+
+.about-store {
+	padding-bottom: 40px;
+}
+
+.about-store__title {
+	font-family: $fontStackBold;
+	font-size: 25px;
+	line-height: 20px;
+	color: $mainFontColor;
+}
+
+.about-store__desc {
+	font-size: 15px;
+	line-height: 20px;
+	-moz-column-count: 3; /* Для Firefox */
+  -webkit-column-count: 3; /* Для Safari и Chrome */
+  column-count: 3;
+}
+
+// FOOTER
+
+.footer {
+	@include clearfix;
+	/* padding-top: 10px; */
+	background: url("../img/bg-footer.png") repeat;
+}
+
+.footer__logo,
+.footer__site-map {
+	float: left;
+	margin-right: 25px;
+}
+
+.footer__socials {
+	float: right;
+}
+
+.header__logo {
+
+}
 
 
 
