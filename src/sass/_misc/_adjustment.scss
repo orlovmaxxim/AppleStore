@@ -4,7 +4,7 @@ $containerWidth: 1000px;
 $containerMargin: 0px auto;
 $fontStack: "elektra_light_proregular", Arial ,sans-serif;
 $fontStackBold: "elektra_light_probold", Arial ,sans-serif;
-$footerHeight: 230px;
+$footerHeight: 175px;
 
 $mainFontColor: #5c7b98;
 $mainColorBlue: #00b9fe;
@@ -74,4 +74,16 @@ footer {
 	position: relative; 
 	/* margin-top: -$footerHeight; */
 	height: $footerHeight;
+}
+
+@mixin navigatorItemColorBlue {
+    background: $mainColorBlue;
+    border-left-color: $mainColorBlue;
+    border-bottom-color: $mainColorBlue;
+}
+
+@mixin navigatorItemColorGray {
+    background: #dce6f0;
+    border-left-color: #dce6f0;
+    border-bottom-color: #dce6f0;
 }
