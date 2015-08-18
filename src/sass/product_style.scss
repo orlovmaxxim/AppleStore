@@ -326,23 +326,77 @@ $cart: cart-i;
 
 .footer {
 	@include clearfix;
-	/* padding-top: 10px; */
+	padding-top: 53px;
 	background: url("../img/bg-footer.png") repeat;
 }
 
 .footer__logo,
 .footer__site-map {
 	float: left;
-	margin-right: 25px;
+}
+
+.footer__logo {
+	margin-right: 120px;
 }
 
 .footer__socials {
 	float: right;
+	max-width: 200px;
 }
 
-.header__logo {
-
+.footer__logo {
+	position: relative;
+	top: 45px;
 }
+
+.site-map__title {
+	font-size: 15px;
+	line-height: 0px;
+}
+
+.site-map__item {
+	@include inlineblock;
+	margin-right: 72px;
+	color: #fff;
+}
+
+.site-map__link {
+	display: block;
+	font-size: 15px;
+	line-height: 25px;
+	color: #fff;
+}
+
+.mobile-store__link {
+	@include inlineblock;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-soc__item {
+	@include inlineblock;
+	margin-right: 8px;
+}
+
+.footer-soc__link {
+	display: block;
+	text-decoration: none;
+	font-size: 0px;
+}
+
+$items: vk-footer, fb-footer, tw-footer;
+
+@each $item in $items {
+	.footer-soc__link_#{$item} {
+		background: sprite($icons, $item);
+		/* background-image: url('../img/#{$item}.png'); */
+		background-repeat: no-repeat;
+		width: sprite-width($icons, $item);
+		height: sprite-height($icons, $item);
+	}
+}
+
+
 
 
 
