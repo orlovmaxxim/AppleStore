@@ -598,7 +598,7 @@ footer {
 }
 
 .soc__link_vk {
-  background: url('/../img/../img-sa43d8bc2d3.png') 0 -515px;
+  background: url('/../img/../img-sa47ffad929.png') 0 -623px;
   /* background-image: url('../img/vk.png'); */
   background-repeat: no-repeat;
   width: 22px;
@@ -606,7 +606,7 @@ footer {
 }
 
 .soc__link_fb {
-  background: url('/../img/../img-sa43d8bc2d3.png') 0 -281px;
+  background: url('/../img/../img-sa47ffad929.png') 0 -317px;
   /* background-image: url('../img/fb.png'); */
   background-repeat: no-repeat;
   width: 22px;
@@ -614,7 +614,7 @@ footer {
 }
 
 .soc__link_tw {
-  background: url('/../img/../img-sa43d8bc2d3.png') 0 -457px;
+  background: url('/../img/../img-sa47ffad929.png') 0 -529px;
   /* background-image: url('../img/tw.png'); */
   background-repeat: no-repeat;
   width: 22px;
@@ -634,7 +634,7 @@ footer {
   content: " ";
   position: absolute;
   left: -28px;
-  background: url('/../img/../img-sa43d8bc2d3.png') 0 -303px;
+  background: url('/../img/../img-sa47ffad929.png') 0 -339px;
   background-repeat: no-repeat;
   width: 16px;
   height: 22px;
@@ -766,7 +766,7 @@ footer {
   content: " ";
   position: absolute;
   left: 8px;
-  background: url('/../img/../img-sa43d8bc2d3.png') 0 -228px;
+  background: url('/../img/../img-sa47ffad929.png') 0 -228px;
   background-repeat: no-repeat;
   width: 20px;
   height: 17px;
@@ -888,6 +888,7 @@ footer {
   position: relative;
   left: 0;
   width: 2000px;
+  transition-duration: 0.5s;
 }
 .slider__list:before, .slider__list:after {
   content: "";
@@ -1084,7 +1085,7 @@ footer {
 }
 
 .footer-soc__link_vk-footer {
-  background: url('/../img/../img-sa43d8bc2d3.png') 0 -479px;
+  background: url('/../img/../img-sa47ffad929.png') 0 -551px;
   /* background-image: url('../img/vk-footer.png'); */
   background-repeat: no-repeat;
   width: 36px;
@@ -1092,7 +1093,7 @@ footer {
 }
 
 .footer-soc__link_fb-footer {
-  background: url('/../img/../img-sa43d8bc2d3.png') 0 -245px;
+  background: url('/../img/../img-sa47ffad929.png') 0 -245px;
   /* background-image: url('../img/fb-footer.png'); */
   background-repeat: no-repeat;
   width: 37px;
@@ -1100,7 +1101,7 @@ footer {
 }
 
 .footer-soc__link_tw-footer {
-  background: url('/../img/../img-sa43d8bc2d3.png') 0 -421px;
+  background: url('/../img/../img-sa47ffad929.png') 0 -457px;
   /* background-image: url('../img/tw-footer.png'); */
   background-repeat: no-repeat;
   width: 37px;
